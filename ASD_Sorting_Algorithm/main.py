@@ -49,11 +49,12 @@ def main():
 
             ratio = n / sorting_time
 
-            print(ratio)
+            print("Fn = " + str(n) + " Tn = " + str(sorting_time) + " Fn/Tn = " + str(ratio))
 
     print("Complexity for sorted tables:")
     check_complexity(sorted_arrays, measure_sorting_time, True, sort_array)
     print("\nComplexity for unsorted tables:")
     check_complexity(unsorted_arrays, measure_sorting_time, False, sort_array)
+
 
 main()
